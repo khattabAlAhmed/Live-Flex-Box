@@ -1,0 +1,155 @@
+* {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: #ddd;
+            width: 500px;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #board {
+            width: 100%;
+            height: 310px;
+            background-color: #995db5;
+            border: 2px black solid;
+            border-radius: 5px;
+            box-shadow: inset 15px 15px 5px #7b4a9196;
+            position: relative;
+            flex-grow: 1;
+
+            overflow: hidden;
+            display: flex;
+
+        }
+
+        .board-item {
+            width: 70px;
+            height: 70px;
+            border: 2px solid #000;
+            background: #f7941f;
+            box-shadow: 5px 5px 5px #0000003b, inset 10px 10px 3px #f9af57;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            justify-content: center;
+            cursor: context-menu;
+            /* pointer-events: none; */
+
+        }
+
+        .board-item,
+        #board #buttons button {
+            font-family: cursive;
+
+        }
+
+        /* buttons style */
+        #board #buttons {
+            position: absolute;
+            bottom: 0px;
+            background-color: #f7941f;
+            overflow: hidden;
+            display: flex;
+            left: calc(50% - 45px);
+            border-radius: 10px 10px 0 0;
+        }
+
+        #board #buttons button {
+            width: 30px;
+            background-color: transparent;
+            border: 0px;
+            height: 30px;
+            cursor: pointer;
+            z-index: 10000;
+            font-size: 20px;
+        }
+
+        #board #buttons button:hover {
+            background-color: #f9af57;
+        }
+
+
+        /* options style */
+        #options {
+            background-color: #202124;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-around; */
+            padding: 20px;
+            height: 220px;
+            flex-wrap: wrap;
+            position: relative;
+            border-radius: 5px;
+            gap: 10px;
+        }
+
+
+        #options .option {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        #options .option .option-items {
+            /* position: relative; */
+            display: flex;
+
+        }
+
+        .msg {
+            color: #00dac4;
+            font-size: 15px;
+        }
+
+        .msg span {
+            color: #919191;
+        }
+
+        .active-option .msg span {
+            color: #ddd;
+        }
+
+        #options .option .option-items .option-item {
+            width: 30px;
+            height: 30px;
+            color: #919191;
+            border: 1px #9aa0a6ac solid;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #options .option .option-items .option-item img {
+            width: 80%;
+        }
+
+        .active {
+            background-color: #4b4d55;
+            color: #7cacf8 !important;
+        }
+
+        #options .option .option-items .option-item:first-child {
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        #options .option .option-items .option-item:last-child {
+            border-radius: 0px 5px 5px 0px;
+
+        }

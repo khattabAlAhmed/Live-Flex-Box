@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="board">
+            <div id="buttons">
+                <button id="removeItem">-</button>
+                <button id="counter">3</button>
+                <button id="addItem">+</button>
+            </div>
+            <div class="board-item">item1</div>
+            <div class="board-item">item2</div>
+            <div class="board-item">item3</div>
+        </div>
+        <div id="options">
+            <div data-option="flex-direction" class="option active-option">
+                <div class="msg">flex-direction: <span>normal</span></div>
+                <div class="option-items">
+
+
+                    <div class="option-item active" data-option-item="row"><img src="imgs\1.png" alt=""></div>
+                    <div class="option-item" data-option-item="column"><img src="imgs\2.png" alt=""></div>
+                    <div class="option-item" data-option-item="row-reverse"><img src="imgs\3.png" alt=""></div>
+                    <div class="option-item" data-option-item="column-reverse"><img src="imgs\4.png" alt=""></div>
+                </div>
+            </div>
+            <div data-option="flex-wrap" class="option">
+                <div class="msg">flex-wrap: <span>normal</span></div>
+                <div class="option-items">
+                    <div class="option-item" data-option-item="wrap"><img src="imgs\5.png" alt=""></div>
+                    <div class="option-item" data-option-item="nowrap"><img src="imgs\6.png" alt=""></div>
+                </div>
+            </div>
+            <div data-option="justify-content" class="option">
+                <div class="msg">justify-content: <span>normal</span></div>
+                <div class="option-items">
+                    <div class="option-item" data-option-item="center"><img src="imgs\7.png" alt=""></div>
+                    <div class="option-item" data-option-item="flex-start"><img src="imgs\8.png" alt=""></div>
+                    <div class="option-item" data-option-item="flex-end"><img src="imgs\9.png" alt=""></div>
+                    <div class="option-item" data-option-item="space-between"><img src="imgs\10.png" alt=""></div>
+                    <div class="option-item" data-option-item="space-around"><img src="imgs\11.png" alt=""></div>
+                    <div class="option-item" data-option-item="space-evenly"><img src="imgs\12.png" alt=""></div>
+                </div>
+            </div>
+            <div data-option="align-items" class="option">
+                <div class="msg">align-items: <span>normal</span></div>
+                <div class="option-items">
+                    <div class="option-item" data-option-item="center"><img src="imgs\13.png" alt=""></div>
+                    <div class="option-item" data-option-item="flex-start"><img src="imgs\14.png" alt=""></div>
+                    <div class="option-item" data-option-item="flex-end"><img src="imgs\15.png" alt=""></div>
+                    <div class="option-item" data-option-item="strech"><img src="imgs\16.png" alt=""></div>
+                    <div class="option-item" data-option-item="baseline"><img src="imgs\17.png" alt=""></div>
+                </div>
+            </div>
+            <div data-option="align-content" class="option">
+                <div class="msg">align-content: <span>normal</span></div>
+                <div class="option-items">
+                    <div class="option-item" data-option-item="center"><img src="imgs\18.png" alt=""></div>
+                    <div class="option-item" data-option-item="flex-start"><img src="imgs\19.png" alt=""></div>
+                    <div class="option-item" data-option-item="flex-end"><img src="imgs\20.png" alt=""></div>
+                    <div class="option-item" data-option-item="space-between"><img src="imgs\21.png" alt=""></div>
+                    <div class="option-item" data-option-item="space-around"><img src="imgs\22.png" alt=""></div>
+                    <div class="option-item" data-option-item="strech"><img src="imgs\23.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
